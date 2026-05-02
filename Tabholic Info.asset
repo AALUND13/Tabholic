@@ -15,7 +15,7 @@ MonoBehaviour:
   ModName: Tabholic
   Author: AALUND13
   Version: 1.0.0
-  WebsiteURL: 
+  WebsiteURL: https://github.com/AALUND13/Tabholic
   Description: Tabholic is an information-focused mod for ROUNDS that combines the
     convenience of "Infoholic" and the compatibility of "TabInfo".
   BeforeBuildCommand: 
