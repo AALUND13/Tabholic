@@ -21,6 +21,7 @@ MonoBehaviour:
   BeforeBuildCommand: 
   AfterBuildCommand: 
   Dependencies:
+  - willis81808-UnboundLib-3.2.14
   - AALUND13-UIManager-1.0.0
   DllDependencies: []
   AssemblyDefinitionDependencies: []
