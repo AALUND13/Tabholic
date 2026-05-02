@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f53b16b43f44db45911ff17aee4901d, type: 3}
+  m_Name: Tabholic Info
+  m_EditorClassIdentifier: 
+  ModName: Tabholic
+  Author: AALUND13
+  Version: 1.0.0
+  WebsiteURL: 
+  Description: Tabholic is an information-focused mod for ROUNDS that combines the
+    convenience of "Infoholic" and the compatibility of "TabInfo".
+  BeforeBuildCommand: 
+  AfterBuildCommand: 
+  Dependencies:
+  - AALUND13-UIManager-1.0.0
+  DllDependencies: []
+  AssemblyDefinitionDependencies: []
+  Icon: {fileID: 2800000, guid: 2fdc1781e701831469c1f359735dc232, type: 3}
+  IncludeInAllExports: 1
