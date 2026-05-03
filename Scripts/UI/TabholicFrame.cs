@@ -16,14 +16,12 @@ namespace Tabholic.UI {
 
         public VerticalLayoutGroup CategoryLayoutGroup;
 
-        private bool Preview = false;
-        private bool First = true;
-
-        private bool InitializeOptionControl = false;
+        private bool first = true;
+        private bool initializeOptionControl = false;
 
         private void Awake() {
             UIPanelInfo panel = GetComponentInParent<UIPanelInfo>();
-            if(First) {
+            if(first) {
                 panel.OnDisplayModeChnaged += (DisplayMode display) => {
                     if(display == DisplayMode.Normal) {
                         CreatePlayerStats();
@@ -38,7 +36,7 @@ namespace Tabholic.UI {
                     CreatePreviewStats();
                 }
 
-                First = false;
+                first = false;
             }
         }
 
@@ -58,7 +56,7 @@ namespace Tabholic.UI {
             }
 
 
-            if(!InitializeOptionControl && TabholicOptionPanel.Instance != null) {
+            if(!initializeOptionControl && TabholicOptionPanel.Instance != null) {
                 transform.localScale = Vector3.one * TabholicOptionPanel.Instance.PanelScale.Value;
                 CategoryLayoutGroup.spacing = TabholicOptionPanel.Instance.CategoryGap.Value;
 
@@ -68,8 +66,6 @@ namespace Tabholic.UI {
         }
 
         private void CreatePreviewStats() {
-            Preview = true;
-
             foreach(var frame in Frames) {
                 GameObject.Destroy(frame.gameObject);
             }
@@ -92,8 +88,6 @@ namespace Tabholic.UI {
         }
 
         private void CreatePlayerStats() {
-            Preview = false;
-
             foreach(var frame in Frames) {
                 GameObject.Destroy(frame.gameObject);
             }

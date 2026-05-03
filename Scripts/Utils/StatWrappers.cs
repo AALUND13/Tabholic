@@ -113,7 +113,7 @@ namespace Tabholic.Utils {
         }
 
         public bool CanDisplay(Player player) {
-            return (Enabled.Value || !TabholicOptionMenu.SimplisticMode.Value) && (bool)WrappingCategory.InvokeMethod("DisplayCondition", player); ;
+            return (Enabled.Value || !TabholicOptionMenu.SimplisticMode.Value) && (bool)WrappingCategory.InvokeMethod("DisplayCondition", player) && Stats.Any(s => s.CanDisplay(player));
         }
 
         public string Display() {
